@@ -9,9 +9,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <header className="App-header">
-        <FontAwesomeIcon icon={faGithub} />
-      </header>
+      <FontAwesomeIcon icon={faGithub} className="Github-icon" />
     </div>
   );
 }
