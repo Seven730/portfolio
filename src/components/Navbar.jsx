@@ -1,16 +1,17 @@
 import React from "react";
+import "./Style.scss";
 
 export default function Navbar() {
   return (
     <div>
       <nav>
-        <div class="nav-wrapper">
-          <a href="index.html" class="brand-logo left">
-            Logo
+        <div className="nav-wrapper">
+          <a href="index.html" className="brand-logo left">
+            Michał Wojcieszak
           </a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li>
-              <a href="index.html">My projects</a>
+              <a href="index.html">Projects</a>
             </li>
             <li>
               <a href="index.html">Technologies</a>
