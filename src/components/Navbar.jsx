@@ -1,26 +1,35 @@
 import React from "react";
 import "./Style.scss";
+import { Link, animateScroll } from "react-scroll";
 
 export default function Navbar() {
   return (
-    <div>
+    <div className="navbar-fixed">
       <nav>
         <div className="nav-wrapper">
-          <a href="index.html" className="brand-logo left">
+          <a
+            href
+            className="brand-logo left"
+            onClick={() => animateScroll.scrollToTop()}
+          >
             Michał Wojcieszak
           </a>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li>
-              <a href="index.html">Projects</a>
+              <Link to="Projects" smooth={true} duration={1000}>
+                Projects
+              </Link>
             </li>
             <li>
-              <a href="index.html">Technologies</a>
+              <Link to="#Technologies" smooth={true} duration={1000}>
+                Technologies
+              </Link>
             </li>
             <li>
-              <a href="index.html">About</a>
+              <a href="#About">About</a>
             </li>
             <li>
-              <a href="index.html">Contact</a>
+              <a href="#Contact">Contact</a>
             </li>
           </ul>
         </div>

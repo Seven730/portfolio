@@ -1,3 +1,5 @@
+$primaryFontSize: 60px;
+
 .brand-logo {
   margin-left: 30px;
 }
@@ -5,6 +7,10 @@
 .Landing {
   display: flex;
   justify-content: center;
+}
+
+.Landing p {
+  font-size: $primaryFontSize;
 }
 
 .Icons {
@@ -25,7 +31,17 @@
   margin: auto;
 }
 
-.Projects {
+.Projects .row {
+  display: flex;
+  justify-content: center;
+}
+
+#leftCard {
+  margin-right: 40px;
+}
+
+#rightCard {
+  margin-left: 40px;
 }
 
 .Footer {
