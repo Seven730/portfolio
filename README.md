@@ -1,6 +1,6 @@
 # Portfolio
 
-This project is made in order to show my skillset & other projects.
+This project is made in order to show my skillset & other projects aswell as test some new technologies.
 
 Technologies used: </br>
 React </br>
