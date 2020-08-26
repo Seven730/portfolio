@@ -1,16 +1,39 @@
+$logoFont: "Caveat", cursive;
+$primaryFont: "Alata", sans-serif;
 $primaryFontSize: 60px;
+$secondaryFont: sans-serif;
+
+.nav-wrapper {
+  background-color: lightblue;
+}
+
+.nav-wrapper a {
+  color: black;
+}
 
 .brand-logo {
+  font-family: $logoFont;
+  font-size: 50px;
   margin-left: 30px;
 }
 
 .Landing {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .Landing p {
+  font-family: $primaryFont;
   font-size: $primaryFontSize;
+}
+
+.SecondaryText {
+  line-height: 0.5;
+  font-size: 50px !important;
+}
+
+.Landing img {
+  height: 300px;
+  margin-top: 30px;
 }
 
 .Icons {

@@ -3,8 +3,9 @@ import React from "react";
 export default function Landing() {
   return (
     <div className="Landing" id="Landing">
-      <p>Front-End Developer</p>
-      {/* <img src={require("../images/Landing.png")} alt="img" /> */}
+      <p>Hello, my name is Michał</p>
+      <p className="SecondaryText">I create webpages</p>
+      <img src={require("../images/face.png")} alt="img" />
     </div>
   );
 }
