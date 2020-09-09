@@ -20,14 +20,14 @@ export default function Navbar() {
                 Projects
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="#Technologies" smooth={true} duration={1000}>
                 Technologies
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <a href="#About">About</a>
-            </li>
+            </li> */}
             <li>
               <a href="#Contact">Contact</a>
             </li>
