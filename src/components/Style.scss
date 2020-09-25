@@ -4,17 +4,18 @@ $primaryFontSize: 60px;
 $secondaryFont: sans-serif;
 
 .nav-wrapper {
-  background-color: lightblue;
+  background-color: rgb(165, 106, 39);
 }
 
 .nav-wrapper a {
-  color: black;
+  color: white;
 }
 
 .brand-logo {
   font-family: $logoFont;
   font-size: 50px;
   margin-left: 30px;
+  cursor: pointer;
 }
 
 .Landing {
@@ -34,6 +35,7 @@ $secondaryFont: sans-serif;
 .Landing img {
   height: 300px;
   margin-top: 30px;
+  border-radius: 50%;
 }
 
 .Icons {
@@ -55,12 +57,13 @@ $secondaryFont: sans-serif;
 }
 
 .Projects .row {
+  margin-top: 20vh;
   display: flex;
   justify-content: center;
 }
 
 #leftCard {
-  margin-right: 40px;
+  // margin-right: 40px;
 }
 
 #rightCard {
