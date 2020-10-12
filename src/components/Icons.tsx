@@ -8,7 +8,7 @@ export default function Icons() {
       <a href="https://github.com/Seven730">
         <FontAwesomeIcon icon={faGithub} className="GithubIcon" />
       </a>
-      <a href="https://github.com/Seven730">
+      <a href="https://www.linkedin.com/in/micha%C5%82-wojcieszak-9403931b3">
         <FontAwesomeIcon icon={faLinkedin} className="LinkedInIcon" />
       </a>
       <a href="https://www.codewars.com/users/Seven73">

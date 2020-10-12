@@ -3,12 +3,22 @@ $primaryFont: "Alata", sans-serif;
 $primaryFontSize: 60px;
 $secondaryFont: sans-serif;
 
-.nav-wrapper {
-  background-color: rgb(165, 106, 39);
-}
-
-.nav-wrapper a {
-  color: white;
+.navbar-fixed {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.8%;
+  nav {
+    width: 96%;
+    background-color: #2e2e2e;
+    border-radius: 30px;
+    opacity: 95%;
+    a {
+      color: white;
+    }
+    #nav-mobile {
+      margin-right: 1.5%;
+    }
+  }
 }
 
 .brand-logo {
@@ -20,40 +30,35 @@ $secondaryFont: sans-serif;
 
 .Landing {
   text-align: center;
-}
-
-.Landing p {
-  font-family: $primaryFont;
-  font-size: $primaryFontSize;
-}
-
-.SecondaryText {
-  line-height: 0.5;
-  font-size: 50px !important;
-}
-
-.Landing img {
-  height: 300px;
-  margin-top: 30px;
-  border-radius: 50%;
+  p {
+    font-family: $primaryFont;
+    font-size: $primaryFontSize;
+  }
+  .SecondaryText {
+    line-height: 0.5;
+    font-size: 50px !important;
+  }
+  img {
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 50%;
+  }
 }
 
 .Icons {
   display: flex;
   justify-content: center;
-}
-
-.Icons a {
-  color: black;
-  margin: 100px 10px 0 10px;
-}
-
-.GithubIcon,
-.LinkedInIcon,
-.CodewarsIcon {
+  a {
+    color: black;
+    margin: 100px 10px 0 10px;
+  }
+  .GithubIcon,
+  .LinkedInIcon,
+  .CodewarsIcon {
   font-size: calc(30px + 2vmin);
   height: calc(30px + 2vmin);
   margin: auto;
+  }
 }
 
 .Projects .row {

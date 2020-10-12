@@ -15,19 +15,24 @@ export default function Navbar() {
             Michał Wojcieszak
           </a>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
+          <li>
+              <Link onClick={() => animateScroll.scrollToTop()} smooth={true} duration={600}>
+                Home
+              </Link>
+            </li>
             <li>
-              <Link to="Projects" smooth={true} duration={1000}>
+              <Link to="Projects" smooth={true} duration={600}>
                 Projects
               </Link>
             </li>
-            {/* <li>
-              <Link to="#Technologies" smooth={true} duration={1000}>
+            <li>
+              <Link to="#Technologies" smooth={true} duration={600}>
                 Technologies
               </Link>
-            </li> */}
-            {/* <li>
+            </li>
+            <li>
               <a href="#About">About</a>
-            </li> */}
+            </li>
             <li>
               <a href="#Contact">Contact</a>
             </li>
