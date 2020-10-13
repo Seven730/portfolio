@@ -61,18 +61,13 @@ $secondaryFont: sans-serif;
   }
 }
 
-.Projects .row {
+.Projects {
   margin-top: 20vh;
   display: flex;
   justify-content: center;
-}
-
-#leftCard {
-  // margin-right: 40px;
-}
-
-#rightCard {
-  margin-left: 40px;
+  .card {
+    width: 20%;
+  }
 }
 
 .Footer {
