@@ -3,10 +3,10 @@
 The project intent is to challenge myself in making great looking Homepage & to test some new technologies.
 
 Technologies used: </br>
-React </br>
-TypeScript </br>
-SASS </br>
-Materialize </br>
+* React </br>
+* TypeScript </br>
+* SASS </br>
+* Materialize </br>
 
 ## Available Scripts
 
