@@ -1,10 +1,10 @@
 import React from "react";
-import "./App.scss";
 import Navbar from "./components/Navbar";
 import Landing from "./components/Landing";
 import Projects from "./components/Projects";
 import Icons from "./components/Icons";
 import Footer from "./components/Footer";
+import "./App.scss";
 
 function App() {
   return (
