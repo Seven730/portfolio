@@ -11,44 +11,29 @@ export default function Navbar() {
 
   <div id="navbarBasicExample" className="navbar-menu">
     <div className="navbar-start">
-      <Link onClick={() => animateScroll.scrollToTop()} smooth={true} duration={600}>
-                Home
-              </Link>
-
+      <Link className="navbar-item" onClick={() => animateScroll.scrollToTop()} smooth={true} duration={600}>
+        Home
+      </Link>
+      <Link className="navbar-item" to="Projects" smooth={true} duration={600}>
+        Projects
+      </Link>
+      <Link className="navbar-item" to="#Technologies" smooth={true} duration={600}>
+        Technologies
+      </Link>
+      <a className="navbar-item" href="#About">About</a>
+      <a className="navbar-item" href="#Contact">Contact</a>
       <a className="navbar-item">
         Documentation
       </a>
-
-      <div className="navbar-item has-dropdown is-hoverable">
-        <a className="navbar-link">
-          More
-        </a>
-
-        <div className="navbar-dropdown">
-          <a className="navbar-item">
-            About
-          </a>
-          <a className="navbar-item">
-            Jobs
-          </a>
-          <a className="navbar-item">
-            Contact
-          </a>
-          <hr className="navbar-divider"></hr>
-          <a className="navbar-item">
-            Report an issue
-          </a>
-        </div>
-      </div>
     </div>
 
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
+    <div className="navbar-end">
+      <div className="navbar-item">
+        <div className="buttons">
+          <a className="button is-primary">
             <strong>Sign up</strong>
           </a>
-          <a class="button is-light">
+          <a className="button is-light">
             Log in
           </a>
         </div>
