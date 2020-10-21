@@ -4,14 +4,18 @@ import { Link, animateScroll } from "react-scroll";
 
 export default function Navbar() {
   return (
-  <nav className="navbar" role="navigation" aria-label="main navigation">
+  <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div className="navbar-brand">
-    <a href className="brand-logo left" onClick={() => animateScroll.scrollToTop()}>Michał Wojcieszak</a>
+      <a href className="brand-logo left" onClick={() => animateScroll.scrollToTop()}>Michał Wojcieszak</a>
     </div>
 
   <div id="navbarBasicExample" className="navbar-menu">
     <div className="navbar-start">
-      <Link className="navbar-item" onClick={() => animateScroll.scrollToTop()} smooth={true} duration={600}>
+      
+    </div>
+
+    <div className="navbar-end">
+    <Link className="navbar-item" onClick={() => animateScroll.scrollToTop()} smooth={true} duration={600}>
         Home
       </Link>
       <Link className="navbar-item" to="Projects" smooth={true} duration={600}>
@@ -22,20 +26,14 @@ export default function Navbar() {
       </Link>
       <a className="navbar-item" href="#About">About</a>
       <a className="navbar-item" href="#Contact">Contact</a>
-      <a className="navbar-item">
-        Documentation
-      </a>
-    </div>
-
-    <div className="navbar-end">
       <div className="navbar-item">
         <div className="buttons">
-          <a className="button is-primary">
+          {/* <button className="button is-primary">
             <strong>Sign up</strong>
-          </a>
-          <a className="button is-light">
+          </button>
+          <button className="button is-light">
             Log in
-          </a>
+          </button> */}
         </div>
       </div>
     </div>
@@ -45,7 +43,7 @@ export default function Navbar() {
 }
 
 
-{/* <div className="navbar-fixed">
+/* <div className="navbar-fixed">
       <nav class='navbar' role='navigation'>
         <div className="nav-wrapper">
           <a
@@ -80,4 +78,4 @@ export default function Navbar() {
           </ul>
         </div>
       </nav>
-    </div> */}
+    </div> */

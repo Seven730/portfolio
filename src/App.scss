@@ -15,7 +15,7 @@ $family-sans-serif: 'Nunito', sans-serif;
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $primary: $purple;
-$link: $pink;
+$link: black;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
@@ -39,5 +39,5 @@ $input-shadow: none;
 .App {
   height: auto;
   width: auto;
-  background: url('./images/background-image.jpg') no-repeat center center fixed
+  background: url('./images/background-image-2.jpg') no-repeat center center fixed
 }
