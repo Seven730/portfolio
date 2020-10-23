@@ -17,5 +17,5 @@ function App() {
     </div>
   );
 }
-
+// IF statement for every component - make it work without router
 export default App;

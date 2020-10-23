@@ -1,9 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export default function Landing() {
-
-  const [start, finish] = useState<any>('')
-  useEffect((): any => fetch('https://api.github.com/events').then(response => finish(response)), [])
   return (
     <div className="Landing" id="Landing">
       <p>Hello, my name is Michał</p>
