@@ -21,6 +21,12 @@ $secondaryFont: sans-serif;
   }
 }
 
+.navbar-item {
+  border: none;
+  cursor: pointer;
+  background: white;
+}
+
 .brand-logo {
   font-family: $logoFont;
   font-size: 50px;
@@ -31,6 +37,7 @@ $secondaryFont: sans-serif;
 .Landing {
   padding-top: 10%;
   text-align: center;
+  min-height: 100vh;
   p {
     font-family: $primaryFont;
     font-size: $primaryFontSize;
@@ -63,7 +70,7 @@ $secondaryFont: sans-serif;
 }
 
 .Projects {
-  margin-top: 20vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   .card {
@@ -74,4 +81,16 @@ $secondaryFont: sans-serif;
 .Footer {
   padding-top: 10vh;
   text-align: center;
+}
+
+.Technologies {
+  min-height: 100vh;
+}
+
+.About {
+  min-height: 100vh;
+}
+
+.Contact {
+  min-height: 100vh;
 }
