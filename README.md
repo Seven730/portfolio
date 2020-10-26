@@ -6,7 +6,7 @@ Technologies used: </br>
 * React </br>
 * TypeScript </br>
 * SASS </br>
-* Materialize </br>
+* Bulma </br>
 
 ## Available Scripts
 
