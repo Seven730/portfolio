@@ -13,7 +13,7 @@ export default function Screens(): JSX.Element {
     <div className="Screens">
       <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
-          <p className="brand-logo left">Michał Wojcieszak</p>
+          <a href='/' className="brand-logo left">Michał Wojcieszak</a>
         </div>
         <div className="navbar-menu">
           <div className="navbar-start">

@@ -1,37 +1,30 @@
 $logoFont: "Caveat", cursive;
 $primaryFont: "Alata", sans-serif;
-$primaryFontSize: 60px;
+$primaryFontSize: 55px;
 $secondaryFont: sans-serif;
 
-.navbar-fixed {
-  display: flex;
-  justify-content: center;
-  padding-top: 0.8%;
-  nav {
-    width: 96%;
-    background-color: #2e2e2e;
-    border-radius: 30px;
-    opacity: 95%;
-    a {
-      color: black !important;
+.Screens {
+  .navbar {
+    .brand-logo {
+      cursor: pointer;
+      font-family: $logoFont;
+      font-size: 50px;
+      margin-left: 30px;
+      color: black
     }
-    #nav-mobile {
-      margin-right: 1.5%;
+    .navbar-item {
+      cursor: pointer;
+      color: rgb(105, 105, 105);
+      border: 0;  
+      background: white;
+      font-size: 18px;
+      transition: 0.2s ease;
+      &:hover {
+        // font-size: 18.5px;
+        color: black;
+      }
     }
   }
-}
-
-.navbar-item {
-  border: none;
-  cursor: pointer;
-  background: white;
-}
-
-.brand-logo {
-  font-family: $logoFont;
-  font-size: 50px;
-  margin-left: 30px;
-  cursor: pointer;
 }
 
 .Landing {
@@ -39,18 +32,42 @@ $secondaryFont: sans-serif;
   text-align: center;
   min-height: 100vh;
   p {
+    color: rgb(98, 98, 98);
     font-family: $primaryFont;
     font-size: $primaryFontSize;
   }
   .SecondaryText {
-    line-height: 0.7;
-    font-size: 50px !important;
+    line-height: 1;
+    font-size: 45px;
   }
   img {
-    height: 300px;
+    height: 260px;
     margin-top: 30px;
     border-radius: 50%;
+    // margin-bottom: 50px;
   }
+}
+
+.Projects {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  .card {
+    margin-top: 20vh;
+    width: 20%;
+  }
+}
+
+.Technologies {
+  min-height: 100vh;
+}
+
+.About {
+  min-height: 100vh;
+}
+
+.Contact {
+  min-height: 100vh;
 }
 
 .Icons {
@@ -66,31 +83,16 @@ $secondaryFont: sans-serif;
   font-size: calc(30px + 2vmin);
   height: calc(30px + 2vmin);
   margin: auto;
-  }
-}
-
-.Projects {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  .card {
-    width: 20%;
+  transition: 0.2s ease;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 
 .Footer {
+  color: rgb(98, 98, 98);
   padding-top: 10vh;
   text-align: center;
-}
-
-.Technologies {
-  min-height: 100vh;
-}
-
-.About {
-  min-height: 100vh;
-}
-
-.Contact {
-  min-height: 100vh;
+  bottom: 0;
 }
