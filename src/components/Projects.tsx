@@ -14,7 +14,7 @@ export default function Projects() {
         </div>
         <div className="card-content">
           <p>
-          LifeShare is an app that was created for classes. It uses React and Google Firebase to store its data. The idea behind it was to create something that is simillar to Instagram, but targeted at families and closed communities who appreciate privacy.
+          LifeShare is an app that was created for classes. It uses <span className="bold-word">React</span> and <span className="bold-word">Google Firebase</span> to store its data. The idea behind it was to create something that is simillar to Instagram, but targeted at families and closed communities who appreciate privacy.
           </p>
         </div>
         <footer className="card-footer">
