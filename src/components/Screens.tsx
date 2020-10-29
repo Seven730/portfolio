@@ -8,6 +8,9 @@ import "./Style.scss";
 
 export default function Screens(): JSX.Element {
     const [screen, setScreen] = useState<JSX.Element>(<Landing />)
+    const navbarItem: string = "navbar-item"
+    const navbarItemActive:string = "navbar-item-active"
+    const [navbarItemClass, setNavbarItemClass] = useState<string>(navbarItem)
 
     return (
     <div className="Screens">
@@ -19,11 +22,11 @@ export default function Screens(): JSX.Element {
           <div className="navbar-start">
           </div>
           <div className="navbar-end">
-            <button className="navbar-item" onClick={() => setScreen(<Landing />)}>Home</button>
-            <button className="navbar-item" onClick={() => setScreen(<Projects />)}>Projects</button>
-            <button className="navbar-item" onClick={() => setScreen(<Technologies />)}>Technologies</button>
-            <button className="navbar-item" onClick={() => setScreen(<About />)}>About</button>
-            <button className="navbar-item" onClick={() => setScreen(<Contact />)}>Contact</button>
+            <button className={navbarItemClass} onClick={():void => setScreen(<Landing />)}>Home</button>
+            <button className={navbarItemClass} onClick={():void => setScreen(<Projects />)}>Projects</button>
+            <button className={navbarItemClass} onClick={():void => setScreen(<Technologies />)}>Technologies</button>
+            <button className={navbarItemClass} onClick={():void => setScreen(<About />)}>About</button>
+            <button className={navbarItemClass} onClick={():void => setScreen(<Contact />)}>Contact</button>
             <div className="navbar-item"></div>
           </div>
         </div>

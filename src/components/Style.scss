@@ -24,6 +24,14 @@ $secondaryFont: sans-serif;
         color: black;
       }
     }
+    .navbar-item-active {
+      cursor: pointer;
+      color: chocolate;
+      border: 0;  
+      background: white;
+      font-size: 18px;
+      transition: 0.2s ease;
+    }
   }
 }
 
