@@ -1,6 +1,6 @@
 import React from "react";
-import Icons from './Icons'
-import Footer from './Footer'
+import Icons from "./Icons";
+import Footer from "./Footer";
 
 export default function Landing(): JSX.Element {
   return (

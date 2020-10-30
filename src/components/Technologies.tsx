@@ -1,9 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Technologies() {
-    return (
-        <div className="Technologies">
-            
-        </div>
-    )
+  return <div className="Technologies"></div>;
 }

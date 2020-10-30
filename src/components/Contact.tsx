@@ -1,9 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Contact(): JSX.Element {
-    return (
-        <div className="Contact">
-            
-        </div>
-    )
+  return <div className="Contact"></div>;
 }
