@@ -36,8 +36,11 @@ $tabletScreenFlip: 1024px;
       font-size: 18px;
       transition: 0.2s ease;
       &:hover {
-        // font-size: 18.5px;
         color: black;
+        text-shadow: 1px 1px #757575;
+      }
+      &:focus {
+        outline: none;
       }
       @media screen and (max-width: $phoneScreen) {
         display: none;
@@ -45,11 +48,16 @@ $tabletScreenFlip: 1024px;
     }
     .navbar-item-active {
       cursor: pointer;
-      color: chocolate;
+      text-shadow: 1px 1px #757575;
+      padding: 8px 12px;
+      color: black;
       border: 0;
       background: white;
       font-size: 18px;
       transition: 0.2s ease;
+      &:focus {
+        outline: none;
+      }
     }
   }
 }
