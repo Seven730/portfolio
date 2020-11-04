@@ -10,6 +10,7 @@ $tabletScreenFlip: 1024px;
 
 .Screens {
   .navbar {
+    background: transparent;
     .brand-logo {
       cursor: pointer;
       font-family: $logoFont;
@@ -37,7 +38,6 @@ $tabletScreenFlip: 1024px;
       transition: 0.2s ease;
       &:hover {
         color: black;
-        text-shadow: 1px 1px #757575;
       }
       &:focus {
         outline: none;
@@ -48,7 +48,6 @@ $tabletScreenFlip: 1024px;
     }
     .navbar-item-active {
       cursor: pointer;
-      text-shadow: 1px 1px #757575;
       padding: 8px 12px;
       color: black;
       border: 0;
@@ -105,12 +104,14 @@ $tabletScreenFlip: 1024px;
   }
   .card-container {
     .card {
-      color: whitesmoke;
+      color: black;
+      // color: whitesmoke;
       margin: 20vh 4vw 0 4vw;
       width: auto;
       height: auto;
       .card-header-title {
-        color: whitesmoke;
+        color: black;
+        // color: whitesmoke;
         padding-left: 5%;
       }
       .card-image {
@@ -126,7 +127,8 @@ $tabletScreenFlip: 1024px;
       }
       .card-footer-item {
         transition: 0.2s ease;
-        color: whitesmoke;
+        color: black;
+        // color: whitesmoke;
         &:hover {
           background: white;
           color: black;
@@ -135,18 +137,42 @@ $tabletScreenFlip: 1024px;
     }
   }
   .project-card-1 {
-    background: #48c774;
+    background: transparent;
+    // background: #48c774;
   }
   .project-card-2 {
-    background: #f14668;
+    background: transparent;
+    // background: #f14668;
   }
   .project-card-3 {
-    background: #3298dc;
+    background: transparent;
+    // background: #3298dc;
   }
 }
 
 .Technologies {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .technologies-container {
+    .site-technologies-container {
+      width: 100%;
+      height: 100%;
+      header {
+        font-family: $primaryFont;
+        font-size: $primaryFontSize;
+      }
+    }
+    .used-technologies-container {
+      width: 100%;
+      height: 100%;
+      header {
+        font-family: $primaryFont;
+        font-size: $primaryFontSize;
+      }
+    }
+  }
 }
 
 .About {
