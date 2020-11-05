@@ -9,17 +9,22 @@ export default function About() {
             <p className="card-header-title">About</p>
           </header>
           <div className="card-content">
-            <p>
-              I am 24 yo developer based near Cracow, who is currently
-              unemployed and studying Applied Informatics (Master's Degree) at
-              Cracow University of Economics.
-            </p>
-            <p>
-              Making this beautiful page was possible thanks to{" "}
-              <span className="bold-word">React</span> and{" "}
-              <span className="bold-word">Bulma</span>. I enjoyed woking on this
-              very much and I hope - whoever reads it - you like the effect too!
-            </p>
+            <div className="block">
+              <p>
+                I am 24 yo developer based near Cracow, who is currently
+                unemployed and studying Applied Informatics (Master's Degree) at
+                Cracow University of Economics.
+              </p>
+            </div>
+            <div className="block">
+              <p>
+                Making this beautiful page was possible thanks to{" "}
+                <span className="bold-word">React</span> and{" "}
+                <span className="bold-word">Bulma</span>. I enjoyed woking on
+                this very much and I hope - whoever reads it - you like the
+                effect too!
+              </p>
+            </div>
             <span>
               Photo by{" "}
               <a href="https://unsplash.com/@mvds?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">

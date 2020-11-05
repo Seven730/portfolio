@@ -35,7 +35,8 @@ $tabletScreenFlip: 1024px;
       border: 0;
       background: white;
       font-size: 18px;
-      transition: 0.2s ease;
+      transition: 0.5s;
+      font-weight: normal;
       &:hover {
         color: black;
       }
@@ -53,7 +54,8 @@ $tabletScreenFlip: 1024px;
       border: 0;
       background: white;
       font-size: 18px;
-      transition: 0.2s ease;
+      transition: 0.5s;
+      font-weight: bold;
       &:focus {
         outline: none;
       }
@@ -98,55 +100,71 @@ $tabletScreenFlip: 1024px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  display: flex;
   @media screen and (max-width: $phoneScreen) {
     display: block;
   }
-  .card-container {
-    .card {
-      color: black;
-      // color: whitesmoke;
-      margin: 20vh 4vw 0 4vw;
-      width: auto;
-      height: auto;
-      .card-header-title {
-        color: black;
-        // color: whitesmoke;
-        padding-left: 5%;
-      }
-      .card-image {
-        width: 50.5vh;
-        height: 30vh;
-        padding: 5% 5%;
-      }
-      .card-content {
-        padding-top: 0;
-        .bold-word {
-          font-weight: bold;
-        }
-      }
-      .card-footer-item {
-        transition: 0.2s ease;
-        color: black;
-        // color: whitesmoke;
-        &:hover {
-          background: white;
+  .slider-container {
+    .slider {
+      width: 26vw;
+      height: 85vh;
+      display: flex;
+      overflow-x: auto;
+      overflow: hidden;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      .card-container {
+        .card {
           color: black;
+          margin: 20vh 4vw 0 4vw;
+          width: 25vw;
+          height: auto;
+          transition: 0.5s;
+          background: transparent;
+          flex-shrink: 0;
+          scroll-snap-align: start;
+          &:hover {
+            background: whitesmoke;
+            box-shadow: 0.5px 0.7px 1.5px 0.7px rgb(168, 168, 168);
+          }
+          .card-header-title {
+            color: black;
+            padding-left: 5%;
+          }
+          .card-image {
+            width: auto;
+            height: 30vh;
+            padding: 6% 5%;
+          }
+          .card-content {
+            padding-top: 0;
+            .bold-word {
+              font-weight: bold;
+            }
+          }
+          .card-footer-item {
+            transition: 0.5s;
+            color: black;
+            &:hover {
+              background: white;
+              color: black;
+            }
+          }
         }
+      }
+      .project-card-1 {
+        background: transparent;
+        // background: #48c774;
+      }
+      .project-card-2 {
+        background: transparent;
+        // background: #f14668;
+      }
+      .project-card-3 {
+        background: transparent;
+        // background: #3298dc;
       }
     }
-  }
-  .project-card-1 {
-    background: transparent;
-    // background: #48c774;
-  }
-  .project-card-2 {
-    background: transparent;
-    // background: #f14668;
-  }
-  .project-card-3 {
-    background: transparent;
-    // background: #3298dc;
   }
 }
 
@@ -209,7 +227,7 @@ $tabletScreenFlip: 1024px;
     font-size: calc(30px + 2vmin);
     height: calc(30px + 2vmin);
     margin: auto;
-    transition: 0.2s ease;
+    transition: 0.5s;
     &:hover {
       opacity: 0.8;
     }
