@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import Icon from "@mdi/react";
+import { mdiArrowLeftDropCircleOutline } from "@mdi/js";
+import { mdiArrowRightDropCircleOutline } from "@mdi/js";
 
 export default function Projects() {
   const [card, setCard] = useState<number>(1);
@@ -109,16 +112,19 @@ export default function Projects() {
         <a
           href={`#project-card-${card}`}
           onClick={(): void => {
-            if (card >= 1) setCard(card - 1);
-          }}>
-          Left
+            if (card > 1) setCard(card - 1);
+          }}
+          className="left-arrow">
+          <Icon path={mdiArrowLeftDropCircleOutline} />
         </a>
+
         <a
           href={`#project-card-${card}`}
           onClick={(): void => {
-            if (card <= 3) setCard(card + 1);
-          }}>
-          Right
+            if (card < 3) setCard(card + 1);
+          }}
+          className="right-arrow">
+          <Icon path={mdiArrowRightDropCircleOutline} />
         </a>
       </div>
     </div>

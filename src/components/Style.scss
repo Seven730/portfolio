@@ -104,28 +104,40 @@ $tabletScreenFlip: 1024px;
     display: block;
   }
   .slider-container {
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 100px 46vw 100px;
     .slider {
-      width: 26vw;
-      height: 85vh;
+      width: 40vw;
+      height: auto;
       display: flex;
       overflow-x: auto;
       overflow: hidden;
       -webkit-overflow-scrolling: touch;
       scroll-snap-type: x mandatory;
       scroll-behavior: smooth;
+      grid-column: 2;
+      @media screen and (max-width: $phoneScreen) {
+        width: 80vw;
+      }
       .card-container {
         .card {
           color: black;
-          margin: 20vh 4vw 0 4vw;
-          width: 25vw;
+          margin: 15vh 4vw 0 4vw;
+          width: 40vw;
           height: auto;
           transition: 0.5s;
           background: transparent;
           flex-shrink: 0;
           scroll-snap-align: start;
+          align-items: center;
+          align-content: center;
           &:hover {
             background: whitesmoke;
             box-shadow: 0.5px 0.7px 1.5px 0.7px rgb(168, 168, 168);
+          }
+          @media screen and (max-width: $phoneScreen) {
+            width: 80vw;
           }
           .card-header-title {
             color: black;
@@ -133,8 +145,8 @@ $tabletScreenFlip: 1024px;
           }
           .card-image {
             width: auto;
-            height: 30vh;
-            padding: 6% 5%;
+            height: auto;
+            padding: 4% 4%;
           }
           .card-content {
             padding-top: 0;
@@ -164,6 +176,15 @@ $tabletScreenFlip: 1024px;
         background: transparent;
         // background: #3298dc;
       }
+    }
+    .left-arrow {
+      grid-column: 1;
+      align-items: center;
+      margin-bottom: 5vh;
+    }
+    .right-arrow {
+      grid-column: 3;
+      align-items: center;
     }
   }
 }
