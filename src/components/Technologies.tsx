@@ -10,7 +10,7 @@ export default function Technologies() {
           <div className="box box-1">
             <article className="media">
               <div className="media-left">
-                <figure className="logo">
+                <figure className="logo-container">
                   <img
                     className="logo"
                     src={require("../images/React-Logo.png")}
@@ -39,7 +39,7 @@ export default function Technologies() {
           <div className="box box-2">
             <article className="media">
               <div className="media-left">
-                <figure className="logo">
+                <figure className="logo-container">
                   <img
                     className="logo"
                     src={require("../images/Bulma-Logo.png")}
@@ -65,7 +65,7 @@ export default function Technologies() {
           <div className="box box-3">
             <article className="media">
               <div className="media-left">
-                <figure className="logo">
+                <figure className="logo-container">
                   <img
                     className="logo"
                     src={require("../images/SASS-Logo.png")}
@@ -94,7 +94,7 @@ export default function Technologies() {
           <div className="box box-4">
             <article className="media">
               <div className="media-left">
-                <figure className="logo">
+                <figure className="logo-container">
                   <img
                     className="logo"
                     src={require("../images/MDI-Logo.png")}
